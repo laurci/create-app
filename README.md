@@ -1,4 +1,4 @@
-# @laurci/app
+# @laurci/create-app
 
 Quickly scaffold applications from my selection of templates.
 
