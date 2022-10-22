@@ -1,10 +1,10 @@
 {
-    "name": "@laurci/app",
-    "version": "1.0.0",
+    "name": "@laurci/create-app",
+    "version": "1.0.1",
     "license": "MIT",
     "main": "./dist/index.js",
     "bin": "./dist/bin.js",
-    "repository": "https://github.com/laurci/app",
+    "repository": "https://github.com/laurci/create-app",
     "files": [
         "dist"
     ],
