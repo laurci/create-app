@@ -99,6 +99,8 @@ Next steps:
 }
 
 async function main() {
+    console.log(); // FIXME: empty line needed for some reason
+
     const args = parseArguments();
     validateArguments(args);
     ensureDir(args.path);
