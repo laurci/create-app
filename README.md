@@ -1,6 +1,6 @@
 # @laurci/create-app
 
-Quickly scaffold applications from my selection of templates.
+Quickly scaffold applications from [my selection of templates](https://github.com/laurci?tab=repositories&q=app-template&type=&language=&sort=name).
 
 ```sh
 yarn create @laurci/app <template> <name> [path]
