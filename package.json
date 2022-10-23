@@ -1,6 +1,6 @@
 {
     "name": "@laurci/create-app",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "MIT",
     "main": "./dist/index.js",
     "bin": "./dist/bin.js",
@@ -10,7 +10,8 @@
     ],
     "scripts": {
         "build": "tsc",
-        "build:watch": "tsc -w"
+        "build:watch": "tsc -w",
+        "prepublish": "yarn build"
     },
     "devDependencies": {
         "@types/node": "^18.11.3",
