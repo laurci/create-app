@@ -87,6 +87,15 @@ function templatePackageJson(args: Arguments) {
     Fs.writeFileSync(Path.join(args.path, "package.json"), JSON.stringify(newPackageJson, null, 4));
 }
 
+function templateReadme(args: Arguments) {
+    const readmePath = Path.join(args.path, "README.md");
+    const readme = Fs.readFileSync(readmePath, "utf8");
+
+    const newReadme = readme.replace(/{name}/g, args.name);
+
+    Fs.writeFileSync(readmePath, newReadme);
+}
+
 function printNextSteps(args: Arguments) {
     console.log(`
 Done!
@@ -121,6 +130,7 @@ async function main() {
     await git.init();
 
     templatePackageJson(args);
+    templateReadme(args);
 
     console.log("Installing dependencies...");
     execSync("yarn", { cwd: args.path, stdio: "inherit" });
